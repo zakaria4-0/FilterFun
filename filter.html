@@ -1,0 +1,52 @@
+<html>
+<head>
+
+	<link rel="stylesheet" href="filter.css">
+	<script src="js/filter.js"></script>
+	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+<title>Filter Fun</title>
+	<h1>Filter Fun</h1>
+	<canvas id="can1"></canvas>
+	<div>
+		<b>Load Image</b>
+		<p>
+			<input type="file" multiple="false" accept="image/*" id="ffile" onchange="upload()" />
+		</p>
+
+	</div>
+	<div>
+		<b>Choose Filter</b>
+		<p>
+			<input type="button" value="Grayscale" id="GS" onclick="makegrayscale()">
+			<input type="button" value="Red" id="RD" onclick="makered()">
+			<input type="button" value="Red Hue"  onclick="RedHue()">
+			<input type="button" value="Window filter"  onclick="originalf()">
+			<input type="button" value="Rainbow filter"  onclick="Rainbow()">
+			<input type="button" value="Blur Filter"  onclick="BlurFilter()">
+			</p>
+
+			<b>Crop image</b>
+			<p>
+				
+			<input type="button" value="crop image"  onclick="crop()">
+			width:
+			<input type="text"  id="tx1">
+			height:
+			<input type="text"  id="tx2">
+			</p>
+			<b>Outher functions</b>
+			<p>
+				<a href="imgcanvas.png" download="GFG">
+                  <button type="button">Download</button>
+                 </a>
+
+			<input type="button" value="Reset Image" id="RI" onclick="Reset()">
+			<input type="button" value="Clear"  onclick="clearcanvas()">
+			</p>
+
+		
+	</div>
+	</body>
+</html>
